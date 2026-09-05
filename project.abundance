@@ -73,8 +73,8 @@
             },
             {
               "name": "degrees",
-              "ioValue": 45,
-              "currentEquation": "45"
+              "ioValue": 30,
+              "currentEquation": "30"
             }
           ],
           "topLevel": false,
@@ -231,7 +231,7 @@
                 },
                 {
                   "name": "z-axis degrees",
-                  "ioValue": 45
+                  "ioValue": 30
                 }
               ]
             },
@@ -401,14 +401,14 @@
             },
             {
               "name": "z-axis degrees",
-              "ioValue": 45,
-              "currentEquation": "45"
+              "ioValue": 30,
+              "currentEquation": "30"
             }
           ]
         },
         {
           "atomType": "Extrude",
-          "x": 0.6,
+          "x": 0.5,
           "y": 0.5,
           "uniqueID": "id-10384",
           "ioValues": [
@@ -425,7 +425,7 @@
         {
           "atomType": "Intersection",
           "x": 0.8,
-          "y": 0.7,
+          "y": 0.8,
           "uniqueID": "id-10388",
           "ioValues": [
             {
@@ -478,8 +478,8 @@
             },
             {
               "name": "z-axis degrees",
-              "ioValue": 45,
-              "currentEquation": "45"
+              "ioValue": 30,
+              "currentEquation": "30"
             }
           ]
         },
@@ -502,7 +502,7 @@
         {
           "atomType": "Export",
           "x": 0.9,
-          "y": 0.9,
+          "y": 0.8,
           "uniqueID": "id-10421",
           "ioValues": [
             {
@@ -532,7 +532,7 @@
         {
           "atomType": "CutLayout",
           "x": 0.9,
-          "y": 0.7,
+          "y": 0.6,
           "uniqueID": "id-10433",
           "name": "Cut Layout",
           "ioValues": [
@@ -542,11 +542,12 @@
             },
             {
               "name": "Sheet Width",
-              "ioValue": 96
+              "ioValue": 10
             },
             {
               "name": "Sheet Height",
-              "ioValue": 48
+              "ioValue": 10,
+              "currentEquation": "10"
             },
             {
               "name": "Part Padding",
@@ -596,7 +597,8 @@
             },
             {
               "name": "height",
-              "ioValue": 0.5
+              "ioValue": 0.25,
+              "currentEquation": "0.25"
             }
           ]
         },
@@ -965,6 +967,11 @@
           "ap2Name": "geometry",
           "ap1ID": "id-10388",
           "ap2ID": "id-10421"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-10388",
+          "ap2ID": "id-10433"
         },
         {
           "ap2Name": "number or geometry",
