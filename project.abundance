@@ -267,7 +267,7 @@
             {
               "name": "Shape 1",
               "ioValue": {
-                "geometry": "move-fuse-circle-4-move-rectangle-8-8-4-0-0--0.5-0-0",
+                "geometry": "move-fuse-circle-4-move-rectangle-8-8-4-0-0--0.5--0.5-0",
                 "tags": [],
                 "bom": [],
                 "plane": {
@@ -324,7 +324,7 @@
         {
           "atomType": "Move",
           "x": 0.6,
-          "y": 0.6,
+          "y": 0.7,
           "uniqueID": "id-9759",
           "ioValues": [
             {
@@ -337,7 +337,8 @@
             },
             {
               "name": "yDist",
-              "ioValue": 0
+              "ioValue": -0.5,
+              "currentEquation": "-.5"
             },
             {
               "name": "zDist",
