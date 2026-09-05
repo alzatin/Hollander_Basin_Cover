@@ -45,8 +45,8 @@
       "allAtoms": [
         {
           "atomType": "Intersection",
-          "x": 0.8,
-          "y": 0.3,
+          "x": 0.7,
+          "y": 0.2,
           "uniqueID": "id-10308",
           "ioValues": [
             {
@@ -62,7 +62,7 @@
         {
           "atomType": "GitHubMolecule",
           "x": 0.5,
-          "y": 0.8,
+          "y": 0.9,
           "uniqueID": "id-10339",
           "name": "SimpleArc",
           "ioValues": [
@@ -73,8 +73,8 @@
             },
             {
               "name": "degrees",
-              "ioValue": 60,
-              "currentEquation": "60"
+              "ioValue": 45,
+              "currentEquation": "45"
             }
           ],
           "topLevel": false,
@@ -231,7 +231,7 @@
                 },
                 {
                   "name": "z-axis degrees",
-                  "ioValue": 60
+                  "ioValue": 45
                 }
               ]
             },
@@ -401,8 +401,8 @@
             },
             {
               "name": "z-axis degrees",
-              "ioValue": 60,
-              "currentEquation": "60"
+              "ioValue": 45,
+              "currentEquation": "45"
             }
           ]
         },
@@ -425,7 +425,7 @@
         {
           "atomType": "Intersection",
           "x": 0.8,
-          "y": 0.8,
+          "y": 0.7,
           "uniqueID": "id-10388",
           "ioValues": [
             {
@@ -441,7 +441,7 @@
         {
           "atomType": "Assembly",
           "x": 0.9,
-          "y": 0.5,
+          "y": 0.4,
           "uniqueID": "id-10392",
           "ioValues": [
             {
@@ -460,8 +460,8 @@
         },
         {
           "atomType": "Rotate",
-          "x": 0.8,
-          "y": 0.4,
+          "x": 0.7,
+          "y": 0.6,
           "uniqueID": "id-10397",
           "ioValues": [
             {
@@ -478,14 +478,15 @@
             },
             {
               "name": "z-axis degrees",
-              "ioValue": 60
+              "ioValue": 45,
+              "currentEquation": "45"
             }
           ]
         },
         {
           "atomType": "Intersection",
           "x": 0.8,
-          "y": 0.6,
+          "y": 0.4,
           "uniqueID": "id-10403",
           "ioValues": [
             {
@@ -497,6 +498,66 @@
               "ioValue": "__GEOMETRY_INPUT__"
             }
           ]
+        },
+        {
+          "atomType": "Export",
+          "x": 0.9,
+          "y": 0.9,
+          "uniqueID": "id-10421",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "File Type",
+              "ioValue": "STEP",
+              "currentEquation": "STEP"
+            },
+            {
+              "name": "Resolution (dpi)",
+              "ioValue": 96
+            },
+            {
+              "name": "Part Name",
+              "ioValue": "FullShape",
+              "currentEquation": "FullShape"
+            }
+          ],
+          "type": null,
+          "resolution": 96,
+          "importIndex": 0,
+          "partName": "FullShape"
+        },
+        {
+          "atomType": "CutLayout",
+          "x": 0.9,
+          "y": 0.7,
+          "uniqueID": "id-10433",
+          "name": "Cut Layout",
+          "ioValues": [
+            {
+              "name": "geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "Sheet Width",
+              "ioValue": 96
+            },
+            {
+              "name": "Sheet Height",
+              "ioValue": 48
+            },
+            {
+              "name": "Part Padding",
+              "ioValue": 0.4
+            },
+            {
+              "name": "Orientations",
+              "ioValue": 12
+            }
+          ],
+          "placements": []
         },
         {
           "atomType": "Output",
@@ -899,6 +960,11 @@
           "ap2Name": "Shape 3",
           "ap1ID": "id-10388",
           "ap2ID": "id-10392"
+        },
+        {
+          "ap2Name": "geometry",
+          "ap1ID": "id-10388",
+          "ap2ID": "id-10421"
         },
         {
           "ap2Name": "number or geometry",
