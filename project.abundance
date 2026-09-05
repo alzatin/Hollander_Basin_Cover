@@ -26,7 +26,7 @@
       "ioValues": [
         {
           "name": "diameter",
-          "ioValue": 27
+          "ioValue": 28
         }
       ]
     },
@@ -67,7 +67,8 @@
         },
         {
           "name": "zDist",
-          "ioValue": 56
+          "ioValue": 57,
+          "currentEquation": "57"
         }
       ]
     },
@@ -311,11 +312,12 @@
         },
         {
           "name": "xDist",
-          "ioValue": 0
+          "ioValue": 0.5,
+          "currentEquation": "0.5"
         },
         {
           "name": "yDist",
-          "ioValue": -1
+          "ioValue": -0.5
         },
         {
           "name": "zDist",
