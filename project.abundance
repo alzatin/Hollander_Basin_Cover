@@ -81,7 +81,7 @@
         {
           "atomType": "Rotate",
           "x": 0.6,
-          "y": 0.6,
+          "y": 0.5,
           "uniqueID": "id-10290",
           "ioValues": [
             {
@@ -107,7 +107,7 @@
         {
           "atomType": "Move",
           "x": 0.7,
-          "y": 0.5,
+          "y": 0.6,
           "uniqueID": "id-10302",
           "ioValues": [
             {
@@ -148,7 +148,7 @@
         {
           "atomType": "Rotate",
           "x": 0.7,
-          "y": 0.7,
+          "y": 0.8,
           "uniqueID": "id-10312",
           "ioValues": [
             {
@@ -173,7 +173,7 @@
         {
           "atomType": "Intersection",
           "x": 0.9,
-          "y": 0.7,
+          "y": 0.8,
           "uniqueID": "id-10318",
           "ioValues": [
             {
@@ -182,6 +182,22 @@
             },
             {
               "name": "geometry2",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        },
+        {
+          "atomType": "Difference",
+          "x": 0.8,
+          "y": 0.6,
+          "uniqueID": "id-10322",
+          "ioValues": [
+            {
+              "name": "retain",
+              "ioValue": "__GEOMETRY_INPUT__"
+            },
+            {
+              "name": "remove",
               "ioValue": "__GEOMETRY_INPUT__"
             }
           ]
@@ -509,9 +525,9 @@
           "ap2ID": "id-10308"
         },
         {
-          "ap2Name": "geometry2",
+          "ap2Name": "retain",
           "ap1ID": "id-9747",
-          "ap2ID": "id-10318"
+          "ap2ID": "id-10322"
         },
         {
           "ap2Name": "Shape 2",
@@ -584,8 +600,18 @@
           "ap2ID": "id-10308"
         },
         {
+          "ap2Name": "remove",
+          "ap1ID": "id-10308",
+          "ap2ID": "id-10322"
+        },
+        {
           "ap2Name": "geometry1",
           "ap1ID": "id-10312",
+          "ap2ID": "id-10318"
+        },
+        {
+          "ap2Name": "geometry2",
+          "ap1ID": "id-10322",
           "ap2ID": "id-10318"
         }
       ],
