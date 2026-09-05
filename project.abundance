@@ -489,6 +489,30 @@
       "y": 0.5,
       "uniqueID": "id-9846",
       "name": "InteriorD"
+    },
+    {
+      "atomType": "Molecule",
+      "x": 0.2,
+      "y": 0.7,
+      "uniqueID": "id-9849",
+      "name": "Molecule",
+      "topLevel": false,
+      "allAtoms": [
+        {
+          "atomType": "Output",
+          "x": 1,
+          "y": 0.5,
+          "uniqueID": "id-9851",
+          "ioValues": [
+            {
+              "name": "number or geometry",
+              "ioValue": "__GEOMETRY_INPUT__"
+            }
+          ]
+        }
+      ],
+      "allConnectors": [],
+      "fileTypeVersion": 1
     }
   ],
   "allConnectors": [
