@@ -7,6 +7,7 @@
 ## Inputs
 
 - **overallD** (number)
+- **InteriorD** (number)
 
 
 
