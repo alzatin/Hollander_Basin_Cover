@@ -9,6 +9,11 @@
       "name": "overallD",
       "ioValue": 27.5,
       "currentEquation": "27.5"
+    },
+    {
+      "name": "InteriorD",
+      "ioValue": 8,
+      "currentEquation": "8"
     }
   ],
   "topLevel": true,
@@ -34,8 +39,8 @@
     },
     {
       "atomType": "Molecule",
-      "x": 0.3,
-      "y": 0.4,
+      "x": 0.2,
+      "y": 0.3,
       "uniqueID": "id-9742",
       "name": "FullShape",
       "topLevel": false,
@@ -82,30 +87,6 @@
           ]
         },
         {
-          "atomType": "Move",
-          "x": 0.8,
-          "y": 0.2,
-          "uniqueID": "id-9748",
-          "ioValues": [
-            {
-              "name": "geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "xDist",
-              "ioValue": 2
-            },
-            {
-              "name": "yDist",
-              "ioValue": 2
-            },
-            {
-              "name": "zDist",
-              "ioValue": 57
-            }
-          ]
-        },
-        {
           "atomType": "Circle",
           "x": 0.2,
           "y": 0.5,
@@ -113,7 +94,8 @@
           "ioValues": [
             {
               "name": "diameter",
-              "ioValue": 8
+              "ioValue": 8,
+              "currentEquation": "InteriorD"
             }
           ]
         },
@@ -277,54 +259,6 @@
           ]
         },
         {
-          "atomType": "Rotate",
-          "x": 0.8,
-          "y": 0.5,
-          "uniqueID": "id-9756",
-          "ioValues": [
-            {
-              "name": "geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "x-axis degrees",
-              "ioValue": 0
-            },
-            {
-              "name": "y-axis degrees",
-              "ioValue": 0
-            },
-            {
-              "name": "z-axis degrees",
-              "ioValue": 17
-            }
-          ]
-        },
-        {
-          "atomType": "Move",
-          "x": 0.8,
-          "y": 0.7,
-          "uniqueID": "id-9757",
-          "ioValues": [
-            {
-              "name": "geometry",
-              "ioValue": "__GEOMETRY_INPUT__"
-            },
-            {
-              "name": "xDist",
-              "ioValue": 0.5
-            },
-            {
-              "name": "yDist",
-              "ioValue": -1
-            },
-            {
-              "name": "zDist",
-              "ioValue": 0
-            }
-          ]
-        },
-        {
           "atomType": "Fusion",
           "x": 0.7,
           "y": 0.8,
@@ -419,18 +353,8 @@
           "ap2ID": "id-9755"
         },
         {
-          "ap2Name": "geometry",
-          "ap1ID": "id-9747",
-          "ap2ID": "id-9748"
-        },
-        {
-          "ap2Name": "geometry",
-          "ap1ID": "id-9748",
-          "ap2ID": "id-9756"
-        },
-        {
           "ap2Name": "number or geometry",
-          "ap1ID": "id-9748",
+          "ap1ID": "id-9747",
           "ap2ID": "id-9744"
         },
         {
@@ -469,11 +393,6 @@
           "ap2ID": "id-9747"
         },
         {
-          "ap2Name": "geometry",
-          "ap1ID": "id-9756",
-          "ap2ID": "id-9757"
-        },
-        {
           "ap2Name": "remove",
           "ap1ID": "id-9758",
           "ap2ID": "id-9755"
@@ -485,9 +404,109 @@
         }
       ],
       "fileTypeVersion": 1
+    },
+    {
+      "atomType": "Move",
+      "x": 0.4,
+      "y": 0.2,
+      "uniqueID": "id-9828",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 2
+        },
+        {
+          "name": "yDist",
+          "ioValue": 2
+        },
+        {
+          "name": "zDist",
+          "ioValue": 57
+        }
+      ]
+    },
+    {
+      "atomType": "Rotate",
+      "x": 0.5,
+      "y": 0.3,
+      "uniqueID": "id-9829",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "x-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "y-axis degrees",
+          "ioValue": 0
+        },
+        {
+          "name": "z-axis degrees",
+          "ioValue": 17
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.7,
+      "y": 0.2,
+      "uniqueID": "id-9830",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0.5
+        },
+        {
+          "name": "yDist",
+          "ioValue": -1
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Input",
+      "x": 0,
+      "y": 0.5,
+      "uniqueID": "id-9846",
+      "name": "InteriorD"
     }
   ],
-  "allConnectors": [],
+  "allConnectors": [
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-9742",
+      "ap2ID": "id-9828"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-9828",
+      "ap2ID": "id-9829"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-9829",
+      "ap2ID": "id-9830"
+    },
+    {
+      "ap2Name": "number or geometry",
+      "ap1ID": "id-9830",
+      "ap2ID": "id-9663"
+    }
+  ],
   "unitsKey": "Inches",
   "fileTypeVersion": 1,
   "filetypeVersion": 1
