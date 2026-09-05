@@ -999,7 +999,7 @@
     {
       "atomType": "Move",
       "x": 0.4,
-      "y": 0.2,
+      "y": 0.4,
       "uniqueID": "id-9828",
       "ioValues": [
         {
@@ -1023,7 +1023,7 @@
     {
       "atomType": "Rotate",
       "x": 0.5,
-      "y": 0.6,
+      "y": 0.5,
       "uniqueID": "id-9829",
       "ioValues": [
         {
