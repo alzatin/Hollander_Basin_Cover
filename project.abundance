@@ -17,9 +17,203 @@
           "ioValue": "__GEOMETRY_INPUT__"
         }
       ]
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.2,
+      "y": 0.4,
+      "uniqueID": "id-9665",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 28
+        }
+      ]
+    },
+    {
+      "atomType": "Extrude",
+      "x": 0.4,
+      "y": 0.4,
+      "uniqueID": "id-9668",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "height",
+          "ioValue": 0.5,
+          "currentEquation": ".5"
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.5,
+      "y": 0.3,
+      "uniqueID": "id-9672",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 2
+        },
+        {
+          "name": "yDist",
+          "ioValue": 2
+        },
+        {
+          "name": "zDist",
+          "ioValue": 56
+        }
+      ]
+    },
+    {
+      "atomType": "Circle",
+      "x": 0.3,
+      "y": 0.6,
+      "uniqueID": "id-9678",
+      "ioValues": [
+        {
+          "name": "diameter",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Rectangle",
+      "x": 0.3,
+      "y": 0.8,
+      "uniqueID": "id-9681",
+      "ioValues": [
+        {
+          "name": "x length",
+          "ioValue": 10
+        },
+        {
+          "name": "y length",
+          "ioValue": 10
+        }
+      ]
+    },
+    {
+      "atomType": "Move",
+      "x": 0.4,
+      "y": 0.9,
+      "uniqueID": "id-9685",
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
+          "name": "xDist",
+          "ioValue": 0
+        },
+        {
+          "name": "yDist",
+          "ioValue": -4
+        },
+        {
+          "name": "zDist",
+          "ioValue": 0
+        }
+      ]
+    },
+    {
+      "atomType": "Fusion",
+      "x": 0.4,
+      "y": 0.7,
+      "uniqueID": "id-9691",
+      "ioValues": [
+        {
+          "name": "Shape 1",
+          "ioValue": {
+            "geometry": "move-rectangle-10-10-0--4-0",
+            "dimension": "2D",
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "tags": [],
+            "bom": []
+          }
+        },
+        {
+          "name": "Shape 2",
+          "ioValue": {
+            "geometry": "circle-5",
+            "dimension": "2D",
+            "tags": [],
+            "plane": {
+              "origin": [
+                0,
+                0,
+                0
+              ],
+              "xDir": [
+                1,
+                0,
+                0
+              ],
+              "normal": [
+                0,
+                0,
+                1
+              ]
+            },
+            "color": "#aad7f2",
+            "bom": []
+          }
+        }
+      ],
+      "unionType": "Fusion"
     }
   ],
-  "allConnectors": [],
+  "allConnectors": [
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-9665",
+      "ap2ID": "id-9668"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-9668",
+      "ap2ID": "id-9672"
+    },
+    {
+      "ap2Name": "Shape 2",
+      "ap1ID": "id-9678",
+      "ap2ID": "id-9691"
+    },
+    {
+      "ap2Name": "geometry",
+      "ap1ID": "id-9681",
+      "ap2ID": "id-9685"
+    },
+    {
+      "ap2Name": "Shape 1",
+      "ap1ID": "id-9685",
+      "ap2ID": "id-9691"
+    }
+  ],
   "unitsKey": "Inches",
   "fileTypeVersion": 1,
   "filetypeVersion": 1
